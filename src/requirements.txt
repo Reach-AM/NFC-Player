@@ -1,0 +1,10 @@
+# Pafy is used to extract the media data from the URLs
+# To avoid errors, change the following lines
+#   self._likes = 0#self._ydl_info['like_count']
+#   self._dislikes = 0#self._ydl_info['dislike_count']
+# in Lib/site-packages/pafy/backend_youtube_dl.py
+pafy==0.5.5
+youtube_dl==2021.6.6
+# VLC also requires to have VLC x64 installed
+# https://get.videolan.org/vlc/3.0.11/win64/vlc-3.0.11-win64.exe
+python-vlc==3.0.12118s
