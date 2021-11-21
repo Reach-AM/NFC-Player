@@ -2,8 +2,9 @@ import re
 import urllib.request
 import pafy
 
-def playAlbum():
+def getAlbum(playlist):
     html = urllib.request.urlopen('https://www.youtube.com/playlist?list=PLxws1M2-zjAPNbXeJrH_TTstwSQdm9KZ4')
+        html = urllib.request.urlopen(playlist)
     video_ids = re.findall(r'watch\?v=(\S{11})', html.read().decode())
 
     links = []
@@ -21,3 +22,6 @@ def playAlbum():
         song.append(media.title)
         song.append(best.url)
         song.append(media._length)
+        album.append(song) link
+
+    return album
