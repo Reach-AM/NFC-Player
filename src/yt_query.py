@@ -22,6 +22,6 @@ def getAlbum(playlist):
         song.append(media.title)
         song.append(best.url)
         song.append(media._length)
-        album.append(song) link
+        album.append(song)
 
     return album
